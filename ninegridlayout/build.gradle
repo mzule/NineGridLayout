@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'nine-grid-layout'
+
+    publishedGroupId = 'com.github.mzule'
+    libraryName = 'NineGridLayout'
+    artifact = 'ninegridlayout'
+
+    libraryDescription = 'ViewGroup to hold nine grid viewes.'
+
+    siteUrl = 'https://github.com/mzule/NineGridLayout/'
+    gitUrl = 'https://github.com/mzule/NineGridLayout.git'
+
+    libraryVersion = '1.0.1'
+
+    developerId = 'mzule'
+    developerName = 'Cao Dongping'
+    developerEmail = 'mzule4j@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

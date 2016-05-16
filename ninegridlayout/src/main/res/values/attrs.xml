@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NineGridLayout">
+        <attr name="spacing" format="dimension" />
+        <attr name="horizontal_spacing" format="dimension" />
+        <attr name="vertical_spacing" format="dimension" />
+        <attr name="single_mode" format="boolean" />
+        <attr name="four_gird_mode" format="boolean" />
+        <attr name="single_mode_width" format="dimension" />
+        <attr name="single_mode_height" format="dimension" />
+        <attr name="single_mode_overflow_scale" format="boolean" />
+    </declare-styleable>
+</resources>
