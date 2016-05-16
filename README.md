@@ -12,7 +12,7 @@
 
 ``` groovy
 dependencies {
-    compile 'com.github.mzule:ninegridlayout:1.0.0'
+    compile 'com.github.mzule:ninegridlayout:1.0.1'
 }
 ```
 
